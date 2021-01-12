@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<dblp>
+<mastersthesis mdate="2002-01-03" key="ms/Brown92">
+<author>Kurt P. Brown</author>
+<title>PRPL: A Database Workload Specification Language</title>
+<format>text/x-wiki</format>
+<text>http://www.mcjones.org/System_R/SQL_Reunion_95/</text>
+</mastersthesis>
+<article mdate="2002-01-03" key="tr/dec/SRC1997-018">
+<editor>Paul R. McJones</editor>
+<title>The 1995 SQL Reunion</title>
+<journal>Digital System Research Center Report</journal>
+<volume>SRC1997-018</volume>
+<year>1997</year>
+<ee>db/labs/dec/SRC1997-018.html</ee>
+<ee>http://www.mcjones.org/System_R/SQL_Reunion_95/</ee>
+</article>
+</dblp>

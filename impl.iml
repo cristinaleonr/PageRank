@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: edu.upenn.cis121.project:stub:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:4.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:16.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-assistedinject:4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.logging.log4j:log4j-core:2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-component-default:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-component-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-stability:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-text:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-component-observation:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-observation-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.rendering:xwiki-rendering-syntax-mediawiki:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.rendering:xwiki-rendering-syntax-wikimodel:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.rendering:xwiki-rendering-wikimodel:7.2" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.cssparser:cssparser:0.9.17" level="project" />
+    <orderEntry type="library" name="Maven: org.w3c.css:sac:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-xml:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom:1.1.3" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.htmlcleaner:htmlcleaner:2.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jdom:jdom2:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xercesImpl:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.stax-utils:stax-utils:20070216" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.rendering:xwiki-rendering-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-filter-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-job:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-logging-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-environment-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-script:7.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.8" level="project" />
+    <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-configuration-api:7.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-properties:7.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.commons:xwiki-commons-context:7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.xwiki.rendering:xwiki-rendering-syntax-plain:7.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-nop:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+</module>

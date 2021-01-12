@@ -1,0 +1,64 @@
+1.
+-DFS
+The algorithm adds every node with degree at least one to the dfs stack exactly once. 
+Let n be the number of such nodes. For each node that we pop from the stack, 
+it sorts its neighbors by their natural ordering.
+This step is Big-Theta of the summation of the degree_i of each vertex v_i in the graph.
+Furthermore, for each such neighbor, I check that that neighbor is not already in the stack
+and has not been visited. This step is O(n) because even though I use a HashSet to store 
+visited nodes, it's O(n) to call lookup in a stack. Then we add the neighbors to the stack,
+which is constant time.
+So the running time of the algorithm is Big-Theta of the summation from i = 1 to n of 
+degree_i * log(degree_i) * n.
+This running time is not optimal. Another HashSet could be used to use the nodes
+present in the dfs stack and increase lookup efficiency. Also, the sorted list that the
+constructor takes in could be used to sort each popped vertice's neighbors more efficiently. 
+ 
+-Dijkstra's
+First, building the pq min-heap, and the distance and parent maps are Big-Theta of n, the number
+of vertices. Then, it calls extract min n times and decreseKey at most at most m times, the
+number of vertices. Finally, we use the parent map to backtrack and get the parent of each
+vertex starting for tgt. This last step is Big-Theta of the length of the path between src
+and tgt. So the algorithm is O(n*log(n) + m*log(m)). This is as optimal as it can be given that
+it is the running time od Dijkstra's.
+
+-Kosaraju's
+First, the algorithm sorts the vertices, which is O(nlogn).Then, it traverses the iterator, which is
+Big-Theta of the summation from i = 1 to n of degree_i * log(degree_i) * n. Reversing the graph is
+Big-Theta of the summation from i = 1 to n of (degree_i * summation from j = 1 to degree of i of degree_j).
+This comes from the outNeighbors() method, which is called in the second call to the dfs iterator.
+Then we call the iterator again, which is the same running time described above.
+So the running time of the algorithm is Big-Theta of the summation from i = 1 to n of degree_i * 
+log(degree_i) * n + Big-Theta of the summation from i = 1 to n of (degree_i * summation from j 
+= 1 to degree of i of degree_j).
+This id definitely not optimal since the actual running time of Kosaraju's is linear. The running
+time of DFS could be improved by adopting the changes discussed in the DFS section of this question.
+The running time of reversing the graph could be improved by having a hashmap of vertices to a hashset
+of their directed edges and using that to figure out outNeighbors().
+
+2.
+The main classes I use to parse the graph are WikiXmlDumpParserImpl, MyDirectedGraphImpl, PageVertex, 
+BufferReader, and XMLEventReader. WikiXmlDumpParserImpl constructs the graph by integrating the classes. 
+PageVertex represents the nodes in the graph, which are distinguished by their id. These nodes are added
+to an instance of MyDirectedGraphImpl, the graph returned by parseXmlDump(). Bufferreader is used as an
+argument to XMLEventReader to read the input file by xml events. 
+
+Regarding object-oriented design, PageVertex represents a wikipedia page in the file. It holds an id,
+links to other pages, links from other pages to itself, and its text. MyDirectedGraphImpl is just a data
+structure that stores all these pages. XMLEventReader can "read" and recognize the different types of 
+events these pages can hold, such as tags, text, and so on. XMLEventReader "tells" MyDirectedGraphImpl
+what represents a vertex in the file. 
+
+These choices make for a very efficient space-complexity since there is no need for many intermediate
+data structures, such as Maps and Sets to keep track of xml events or vertices. I only use a HashMap
+from title to PageVertex to efficiently check whether a vertex in already in the graph, and this is
+only O(number of vertices) space. 
+I was able to find a good balance between the indirection and the two-pass algorithms, which greatly
+improved the running time. What I did is that for every xml event in the file, I made a new node if it was
+a title event. If the node was already in the graph, I did not add it again. This lookup was efficient because
+it was done with a HashMap, so it was expected O(1). If the event was a format event, I would update the
+type of the newly made vertex. This was a constant time operation. Finally, it the event was text and the
+vertex was the right type, I would update outlinks and inlinks. The longest part of this step is for each link,
+checking whether there's already a node for it. This is O(n^2) because at worst we have to call contains() each
+vertex and at worst it takes O(n) to find every vertex. But if I came across a link for which there wasn't a PageVertex
+object yet, I would just made a new one and add it to the graph with the corresponding in/outlinks.
